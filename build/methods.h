@@ -1,0 +1,3 @@
+DEFINE_NEAR_METHOD(get_info)
+DEFINE_NEAR_METHOD(set_learning_info)
+DEFINE_NEAR_METHOD(set_swap_preference)
