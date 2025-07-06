@@ -1,8 +1,45 @@
-# 📚 Upscale Smart Contract (NEAR Protocol)
+# 🧠 Upscale - Smart Contracts (NEAR Protocol)
 
-This smart contract powers the core logic for **Upscale**, a Web3-based learning and certification platform. It manages user registration, course enrollment, progress tracking, and token rewards using the NEAR blockchain.
+This repository contains the smart contract logic for **Upscale**, a Web3-powered learning and hiring platform that certifies user skills and rewards learners using the NEAR Protocol.
+
+These contracts are written in **JavaScript** using the [`near-sdk-js`](https://github.com/near/near-sdk-js) and deployed on the **NEAR testnet**.
 
 ---
+
+## 📦 Getting Started
+
+### 1. 📁 Clone and Install
+
+```bash
+git clone https://github.com/UpscaleHub/contract
+cd contract
+npm install
+```
+
+### 2. 🛠 Build the Smart Contract
+```bash 
+npm run build
+```
+This compiles your contract to WebAssembly (.wasm) and places the build in the build/ directory.
+
+### 3. 🔄 Deploy to NEAR Testnet
+```bash
+near deploy --accountId <your-account>.testnet --wasmFile build/contract.wasm
+```
+Replace <your-account>.testnet with the NEAR testnet account you want to deploy to.
+
+### 📚 Contract Overview
+The contract handles:
+
+👤 User registration
+
+🧠 Experience level assignment
+
+🎓 Course enrollment
+
+✅ Section completion tracking
+
+🏆 Rewarding tokens
 
 ## ⚙️ Exposed Methods
 
@@ -17,11 +54,3 @@ This smart contract powers the core logic for **Upscale**, a Web3-based learning
 - `get_user({ id })` — Get full user details (experience level, tokens, enrolled courses).
 
 ---
-
-## 🚀 Quickstart
-
-### ✅ 1. Requirements
-- Node.js ≥ 16
-- NEAR CLI:  
-  ```bash
-  npm install -g near-cli
