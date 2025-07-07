@@ -29,7 +29,14 @@ near deploy --accountId <your-account>.testnet --wasmFile build/contract.wasm
 Replace <your-account>.testnet with the NEAR testnet account you want to deploy to.
 
 ---
-The contract is deployed to named account [upscale.testnet] with implicit id [30dfbf7edcb12d6dbb87f27391acb05e7c8a1308916cc7821f287be68267e1c1]
+
+## 🚀 Deployed Contract
+
+The smart contract is deployed to the NEAR testnet at:
+
+- **Account Name:** [`upscale.testnet`](https://explorer.testnet.near.org/accounts/upscale.testnet)  
+- **Implicit Account ID:** [`30dfbf7edcb12d6dbb87f27391acb05e7c8a1308916cc7821f287be68267e1c1`](https://explorer.testnet.near.org/accounts/30dfbf7edcb12d6dbb87f27391acb05e7c8a1308916cc7821f287be68267e1c1)
+
 ---
 
 ### 📚 Contract Overview
